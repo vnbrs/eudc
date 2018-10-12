@@ -1,10 +1,12 @@
 import click, glob, os, re
 from language.RubyLanguage import RubyLanguage
 from language.PythonLanguage import PythonLanguage
+from language.JavaScriptLanguage import JavaScriptLanguage
 
 FILE_TYPES = {
     'ruby': RubyLanguage,
     'python': PythonLanguage,
+    'javascript': JavaScriptLanguage,
 }
 
 @click.command()
