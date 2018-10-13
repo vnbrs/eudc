@@ -29,5 +29,7 @@ def check_file(file, language):
             line_number += 1
             for check_expression in language.debugging_calls:
                 if re.match(check_expression, line):
-                    click.echo(f'\nFound debugging call on \u001b[37m{file}\u001b[0m:\u001b[31m{line_number}\u001b[0m')
+                    click.echo(f'\nFound debugging call on ', nl=False)
+                    click.secho(f'{file}:', fg='red', nl=False)
+                    click.secho(f'{line_number}', fg='green')
                     click.echo(line)
