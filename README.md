@@ -13,3 +13,10 @@ Found debugging call on app/mailers/application_mailer.rb:10
 Found debugging call on app/mailers/application_mailer.rb:34
     puts "Email could not be sent #{e}"
 ```
+
+# Developing and contributing
+To develop and debug `udce`, you'll need Python 3 and PIP.
+
+1) Clone the project
+2) Run the following script inside the project root folder: `pip3 install --editable .`
+3) You're good to go! Run `udce . --languages=python` to check if everything is fine
