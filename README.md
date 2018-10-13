@@ -6,17 +6,10 @@ Use it on your terminal:
 
 ```sh
 $ udce . --language=ruby
-  app/my_file.rb
-  28. puts 'debugging session'
+Found debugging call on app/mailers/application_mailer.rb:10
+    puts "Sending mail to #{params[:to]}"
 
-  spec/my_other_file.rb
-  1. pry
-  7. byebug
 
-$ udce . --language=javascript
-  app/main.js
-  19. debugger;
-
-  test.js
-  49. console.log('duh');
+Found debugging call on app/mailers/application_mailer.rb:34
+    puts "Email could not be sent #{e}"
 ```
