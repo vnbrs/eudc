@@ -4,7 +4,7 @@ import re
 
 import click
 
-from language import GoLanguage, JavaScriptLanguage, PythonLanguage, RubyLanguage
+from eudc import GoLanguage, JavaScriptLanguage, PythonLanguage, RubyLanguage
 
 FILE_TYPES = {
     "ruby": RubyLanguage,
