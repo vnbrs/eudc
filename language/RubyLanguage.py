@@ -1,8 +1,11 @@
+import re
+
+
 class RubyLanguage:
-    name = 'Ruby'
-    extension = 'rb'
+    name = "Ruby"
+    extension = "rb"
     debugging_calls = [
-        r'\s*puts',
-        r'\s*byebug',
-        r'\s*pry',
+        re.compile(r"\s*puts"),
+        re.compile(r"\s*byebug"),
+        re.compile(r"\s*pry"),
     ]
